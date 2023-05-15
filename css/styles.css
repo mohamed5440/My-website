@@ -1,0 +1,326 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --mainColor: #3f71f4;
+    --mainColorB: #12262e;
+}
+body {
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    color: var(--mainColorB);
+    min-height: 3000px;
+}
+/* Start Header */
+.header {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 1px 0 black;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.container {
+    background-color: white;
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+ul li a {
+    text-decoration: none;
+    color: var(--mainColorB);
+    transition-duration: 0.3s;
+    padding: 20px;
+}
+ul li a:hover {
+    background-color: var(--mainColor);
+    color: white;
+}
+.logo {
+    position: absolute;
+    top: 20%;
+    color: var(--mainColor);
+}
+/* End Header */
+/* Start Website */
+.all-website {
+    background-color: white;
+    width: 80%;
+    height: 1500px;
+    margin: 10px auto;
+    position: relative;
+    z-index: 0;
+}
+.website {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    color: var(--mainColorB);
+}
+h1 {
+    font-size: 4rem;
+}
+span {
+    color: var(--mainColor);
+}
+.button {
+    margin-top: 50px;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 5px 20px 5px 20px;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    border-radius: 10px;
+    color: white;
+}
+.button a {
+    color: white;
+    text-decoration: none;
+}
+.social {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    position: absolute;
+    left: 0;
+}
+.social a {
+    margin: 15px;
+}
+i {
+    font-size: 30px;
+    color: var(--mainColorB);
+}
+.images img {
+    width: 48%;
+    position: absolute;
+    right: 0;
+    top: 7%;
+    transition-duration: 1s;
+}
+.images img:hover {
+    width: 50%;
+}
+/* Start About */
+.about {
+    background-color: white;
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    top: 46%;
+    display: flex;
+}
+.man img {
+    width: 20%;
+    filter: grayscale(0%);
+    transition: 0.5s;
+    position: absolute;
+    top: 25%;
+}
+.man img:hover {
+    filter: grayscale(100%);
+}
+.title-about h1 {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    border-bottom: 3px solid var(--mainColor);
+}
+.about-me p {
+    width: 40%;
+    position: absolute;
+    right: 5%;
+    top: 33%;
+    font-size: 1.5rem;
+}
+/* End About */
+/* Start Work */
+.work {
+    background-color: white;
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    position: relative;
+    top: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.title-work h1 {
+    position: absolute;
+    top: -10%;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    border-bottom: 3px solid var(--mainColor);
+}
+.card-one,
+.card-two,
+.card-three {   /* Stat Row Number One  */
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin: 50px;
+    box-shadow: 0 0 1px 0 black;
+    transition: 0.5s;
+}
+.card-one:hover,
+.card-two:hover,
+.card-three:hover {
+    background-color: var(--mainColorB);
+    color: white;
+}
+.work img {
+    width: 250px;
+}
+.card-one h1, 
+.card-two h1, 
+.card-three h1 {
+    font-size: 1.9rem;
+    padding: 5px;
+}
+.card-one p, 
+.card-two p, 
+.card-three p { /* End Row Number One  */
+    padding: 5px;
+}
+.card-one-row,
+.card-two-row,
+.card-three-row {   /* Stat Row Number Two  */
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin: 50px;
+    box-shadow: 0 0 1px 0 black;
+    transition: 0.5s;
+}
+.card-one-row:hover,
+.card-two-row:hover,
+.card-three-row:hover {
+    background-color: var(--mainColorB);
+    color: white;
+}
+.work img {
+    width: 250px;
+}
+.card-one-row h1, 
+.card-two-row h1, 
+.card-three-row h1 {
+    font-size: 1.9rem;
+    padding: 5px;
+}
+.card-one-row p, 
+.card-two-row p, 
+.card-three-row p { /* End Row Number Two  */
+    padding: 5px;
+}
+/* End Work */
+/* End Website */
+/* Start Content Us */
+.back-content {
+    width: 80%;
+    height: 700px;
+    background-color: white;
+    position: absolute;
+    bottom: -315%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-us {
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 0 0 1px 0 black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.email input,
+.username input {
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    outline: 0;
+    padding: 10px;
+    border: 1px solid var(--mainColorB);
+}
+.email input:hover,
+.username input:hover,
+.paragraph textarea:hover {
+    border: 2px solid var(--mainColor);
+}
+.paragraph textarea {
+    width: 820px;
+    height: 200px;
+    resize: none;
+    margin: 10px;
+    outline: 0;
+    border: 1px solid var(--mainColorB);
+    padding: 10px;
+}
+.submit input {
+    width: 820px;
+    height: 40px;
+    background-color: var(--mainColor);
+    border: none;
+    font-family: 'Righteous', cursive;
+    color: white;
+    transition: 0.5s;
+}
+.submit input:hover {
+    background-color: var(--mainColorB);
+}
+.title-us h1 {
+    position: absolute;
+    top: 18%;
+    margin-left: 10px;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--mainColorB);
+}
+/* End Content Us */
+/* Start Footer */
+.footer {
+    background-color: var(--mainColorB);
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 1440px;
+}
+.social-footer {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.social-footer i {
+    color: white;
+    margin: 15px;
+    font-size: 30px;
+}
+.social-footer i:hover {
+    color: white;
+    margin: 15px;
+    font-size: 30px;
+}
+/* End Footer */
+
